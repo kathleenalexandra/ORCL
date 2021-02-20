@@ -4,10 +4,43 @@
 
 @global-link-color: pink;
 
+
 @oracle-color: #C74634;
 
 
 h1 {
   color: @oracle-color;
   font-weight: 300;
+}
+
+
+/* theme */ 
+.uk-grid > * {
+    padding-left: 0px;
+    padding-bottom:0px;
+}
+
+.uk-grid > .uk-grid-margin, * + .uk-grid-margin {
+    margin-top: 0px;
+}
+/* theme */ 
+
+
+/* page */ 
+.img-col {
+	height: 80vh;
+	background:green;
+
+	.oracle-img {
+		height:100%;
+	}
+	.oracle-img-one {
+		background:blue;
+	}
+	.oracle-img-two {
+		background:red;
+	}
+	.oracle-img-three {
+		background:yellow;
+	}
 }

@@ -12587,9 +12587,9 @@ h4 {
   height: 100%;
 }
 .img-col .oracle-img .img-content {
+  padding-top: 20%;
   position: relative;
   margin: auto;
-  padding-top: 30%;
   width: 80%;
 }
 .img-col .oracle-img-one {
@@ -12645,7 +12645,7 @@ h4 {
   color: white;
   font-size: 11px;
   padding-top: 10%;
-  background: blue;
+  /*background:blue;*/
 }
 .social-breadcrums ul {
   display: inline-flex;
@@ -12677,7 +12677,8 @@ h4 {
     display: block;
   }
   .img-col {
-    height: 40%;
+    height: 300px;
+    max-height: 40%;
   }
   .img-col button {
     display: none;

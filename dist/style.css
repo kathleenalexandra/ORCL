@@ -12513,22 +12513,28 @@ h1 {
   font-weight: 300;
 }
 /* theme */
-.uk-grid > * {
-  padding-left: 0px;
-  padding-bottom: 0px;
+/*.uk-grid > * {
+    padding-left: 0px;
+    padding-bottom:0px;
 }
-.uk-grid > .uk-grid-margin,
-* + .uk-grid-margin {
-  margin-top: 0px;
-}
+
+.uk-grid > .uk-grid-margin, * + .uk-grid-margin {
+    margin-top: 0px;
+}*/
 /* theme */
 /* page */
 .img-col {
-  height: 80vh;
+  height: 60vh;
   background: green;
 }
 .img-col .oracle-img {
   height: 100%;
+}
+.img-col .oracle-img .img-content {
+  position: relative;
+  margin: auto;
+  padding-top: 10%;
+  width: 80%;
 }
 .img-col .oracle-img-one {
   background: blue;

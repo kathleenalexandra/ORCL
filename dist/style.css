@@ -12515,6 +12515,29 @@ iframe.uk-cover {
 .uk-section-muted {
   background: #161513;
 }
+.uk-navbar-nav > li > a {
+  color: white;
+  text-transform: none;
+}
+.uk-button-primary {
+  background-color: white;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  text-transform: none;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.uk-button-secondary {
+  background-color: white;
+  color: black;
+  mix-blend-mode: screen;
+  text-transform: none;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 /* theme */
 /*.uk-grid > * {
     padding-left: 0px;
@@ -12526,7 +12549,11 @@ iframe.uk-cover {
 }*/
 /* theme */
 /* page */
-p {
+p,
+h1,
+h2,
+h3,
+h4 {
   color: #ffffff;
 }
 .wrapper {

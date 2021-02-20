@@ -12529,10 +12529,30 @@ iframe.uk-cover {
   padding-left: 10px;
   padding-right: 10px;
 }
+.uk-button-primary:hover {
+  color: black;
+  background: white;
+  mix-blend-mode: screen;
+  text-transform: none;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .uk-button-secondary {
   background-color: white;
   color: black;
+  background: white;
   mix-blend-mode: screen;
+  text-transform: none;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.uk-button-secondary:hover {
+  background-color: white;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
   text-transform: none;
   border-radius: 8px;
   padding-left: 10px;
@@ -12591,4 +12611,8 @@ h4 {
   background-repeat: repeat-x;
   background-size: auto 12px;
   background-color: #312D2A;
+}
+.footer-copy ul {
+  padding: 0;
+  list-style-type: none;
 }

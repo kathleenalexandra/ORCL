@@ -12579,17 +12579,15 @@ a,
 a:hover {
   color: #ffffff;
 }
+.logo {
+  display: none;
+}
 .wrapper {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
 }
-.top-section {
-  display: inline-flex;
-  min-width: 100%;
-}
-.tablet-nav,
-.mobile-nav {
+.uk-navbar-center {
   display: none;
 }
 .mobile-logo {
@@ -12601,14 +12599,14 @@ a:hover {
   height: 17px;
   width: 17px;
 }
-.footer-section {
-  display: inline-flex;
-  min-width: 100%;
-}
 .img-col {
-  height: 700px;
-  max-height: 90vh;
+  height: 260px;
+  max-height: 40%;
   background: #312e2a;
+}
+.img-col p,
+.img-col button {
+  display: none;
 }
 .img-col .oracle-img {
   background-size: cover;
@@ -12633,7 +12631,7 @@ a:hover {
   background-image: url(https://www.oracle.com/node/oce/storyhub/prod/api/v1.1/assets/CONTCF5045BA0C044A838303338A58C34379/native);
 }
 .img-col .dashed-nav {
-  padding-top: 60%;
+  padding-top: 40px;
   width: 100%;
   display: inline-flex;
   color: #ffffff;
@@ -12644,10 +12642,12 @@ a:hover {
 .img-col .dashed-nav div {
   background: #ffffff;
   border: 2px solid white;
-  height: 6px;
-  width: 24px;
+  height: 2px;
+  width: 18px;
 }
 .img-col .dashed-nav .active {
+  margin-top: -2px;
+  height: 6px;
   background: transparent;
 }
 .img-content p {
@@ -12692,7 +12692,8 @@ a:hover {
   margin: 0px;
 }
 .footer-copy h3 {
-  color: rgba(251, 249, 248, 0.6);
+  color: #ffffff;
+  font-size: 1.3em;
 }
 .footer-copy ul {
   padding: 0;
@@ -12720,67 +12721,65 @@ a:hover {
 .social-breadcrums ul li {
   padding-left: 20px;
 }
-@media only screen and (max-width: 1070px) {
-  .footer-copy h3 {
-    font-size: 1.2rem !important;
-    color: white !important;
-  }
-  .logo {
-    display: none;
-  }
-  .tablet-nav {
+.footer-copy {
+  display: block;
+}
+.footer-copy h3::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  float: right;
+  background: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+}
+.footer-copy ul {
+  display: none;
+}
+@media only screen and (min-width: 975px) and (max-width: 1070px) {
+  .uk-navbar-center {
     display: block;
-  }
-  .top-section {
-    min-width: 100%;
-  }
-  .footer-copy {
-    display: block;
-  }
-  .footer-copy h3::after {
-    content: "";
-    height: 15px;
-    width: 15px;
-    float: right;
-    background: url("../img/arrow.svg");
-    background-repeat: no-repeat;
-  }
-  .footer-copy ul {
-    display: none;
   }
 }
-@media only screen and (max-width: 974px) {
-  .dashed-nav {
-    padding-top: 40px !important;
-  }
-  .dashed-nav div {
-    height: 2px !important;
-    width: 18px !important;
-  }
-  .dashed-nav .active {
-    margin-top: -2px;
-    height: 6px !important;
-  }
-  .mobile-nav {
+@media only screen and (min-width: 1071px) {
+  .logo {
     display: block;
   }
   .uk-navbar-center {
-    display: none;
-  }
-  .img-content {
-    padding-top: 10vh !important;
-  }
-  .img-content p {
-    display: none;
-  }
-  .top-section {
     display: block;
   }
-  .img-col {
-    height: 260px;
-    max-height: 40%;
+  .top-section {
+    display: inline-flex;
+    min-width: 100%;
   }
+  .img-col {
+    height: 700px;
+    max-height: 90vh;
+  }
+  .img-col p,
   .img-col button {
+    display: block;
+  }
+  .dashed-nav {
+    padding-top: 100px !important;
+  }
+  .dashed-nav div {
+    height: 6px !important;
+    width: 24px !important;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .footer-section {
+    display: inline-flex;
+    min-width: 100%;
+  }
+  .footer-copy ul {
+    display: block;
+  }
+  .footer-copy h3 {
+    color: rgba(251, 249, 248, 0.6);
+  }
+  h3::after {
     display: none;
   }
 }

@@ -1,8 +1,8 @@
 @import "node_modules/uikit/src/less/uikit.theme.less";
 
 @large: ~"only screen and (min-width: 1400px)";
-@tablet: ~"only screen and (max-width: 1070px)";
-@mobile: ~"only screen and (max-width: 974px)";
+@desktop: ~"only screen and (min-width: 1071px)";
+@tablet: ~"only screen and (min-width: 975px) and (max-width: 1070px)";
 
 @oracle-orange: #c74634;
 @oracle-brown: #312e2a;
@@ -36,30 +36,18 @@
   text-transform: none;
 }
 
-
 .uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
   .oracle-nav-size; 
 }
-
 
 .uk-navbar-nav {
     .oracle-nav-size; 
 }
 
-
 .oracle-nav-size() {
   height:60px;
   min-height:60px;
 }
-
-
-
-
-
-
-
-
-
 
 .uk-button-primary {
   background-color: @oracle-white;
@@ -116,23 +104,19 @@ a:hover {
   color: @oracle-white;
 }
 
+.logo {
+  display:none;
+}
+
 .wrapper {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
 }
 
-.top-section {
-  display: inline-flex;
-  min-width: 100%;
+.uk-navbar-center {
+  display:none;
 }
-
-.tablet-nav,
-.mobile-nav {
-  display: none;
-}
-
-
 
 .mobile-logo {
   margin-top: 30px;
@@ -145,15 +129,14 @@ a:hover {
   width: 17px;
 }
 
-.footer-section {
-  display: inline-flex;
-  min-width: 100%;
-}
-
 .img-col {
-  height: 700px;
-  max-height: 90vh;
+  height: 260px;
+  max-height: 40%;
   background: @oracle-brown;
+
+  p, button {
+    display:none;
+  }
 
   .oracle-img {
     background-size: cover;
@@ -181,7 +164,7 @@ a:hover {
   }
 
   .dashed-nav {
-    padding-top: 60%;
+    padding-top: 40px;
     width: 100%;
     display: inline-flex;
     color: @oracle-white;
@@ -193,11 +176,13 @@ a:hover {
     div {
       background:@oracle-white;
       border: 2px solid white;
-      height: 6px;
-      width: 24px;
+      height: 2px;
+      width: 18px;
     }
 
     .active {
+      margin-top:-2px;
+      height: 6px;
       background: transparent;
     }
   }
@@ -254,7 +239,8 @@ a:hover {
     margin:0px;
   }
   h3 {
-    color: fade(@oracle-off-white, 60%);
+    color: @oracle-white;
+    font-size:1.3em;
   }
   ul {
     padding: 0;
@@ -287,30 +273,7 @@ a:hover {
   }
 }
 
-@media @tablet {
-
-  .footer-copy {
-
-  h3 {
-    font-size:1.2rem !important;
-    color: white !important;
-  }
-
-}
-
-  .logo {
-    display: none;
-  }
-
-  .tablet-nav {
-    display: block;
-  }
-
-  .top-section {
-    min-width: 100%;
-  }
-
-  .footer-copy {
+ .footer-copy {
     display: block;
 
     h3::after {
@@ -328,46 +291,69 @@ a:hover {
       display: none;
     }
   }
+
+
+@media @tablet {
+.uk-navbar-center {
+  display:block;
+  }
 }
 
-@media @mobile {
-  .dashed-nav {
-    padding-top: 40px !important;
+
+@media @desktop {
+
+  .logo {
+    display:block;
+  }
+
+  .uk-navbar-center {
+    display:block;
+  }
+
+  .top-section {
+    display: inline-flex;
+    min-width: 100%;
+  }
+
+  .img-col {
+  height: 700px;
+  max-height: 90vh;
+
+   p, button {
+    display:block;
+  }
+}
+
+.dashed-nav {
+    padding-top: 100px !important;
     div {
-      height: 2px !important;
-      width: 18px !important;
-    }
-    .active {
-      margin-top:-2px;
       height: 6px !important;
+      width: 24px !important;
     }
   }
 
   .mobile-nav {
-    display: block;
-  }
-
-  .uk-navbar-center {
     display: none;
   }
 
-  .img-content {
-     padding-top:10vh !important;
-    p {
-      display: none;
+  .footer-section {
+    display: inline-flex;
+    min-width: 100%;
+  }
+
+  .footer-copy {
+    ul {
+      display: block;
+    }
+    h3 {
+    color: fade(@oracle-off-white, 60%);
     }
   }
 
-  .top-section {
-    display: block;
+    h3::after {
+    display:none;
   }
 
-  .img-col {
-    height: 260px;
-    max-height: 40%;
-
-    button {
-    display: none;
-    }
-  }
 }
+
+

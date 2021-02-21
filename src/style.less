@@ -7,6 +7,7 @@
 @oracle-orange: #C74634;
 @oracle-brown: #312e2a;
 @oracle-white: #ffffff;
+@oracle-off-white: #FBF9F8;
 
 @oracle-sans-light: Arial;
 @oracle-sans-bold: Arial Narrow;
@@ -50,7 +51,7 @@
 	background:transparent;
 	border:1px solid @oracle-white;
 	text-transform:none;
-	border-radius:8px;
+	border-radius:4px;
 	padding-left:10px;
 	padding-right:10px;
 }
@@ -71,7 +72,7 @@
 	background:@oracle-white;
 	mix-blend-mode: screen;
 	text-transform:none;
-	border-radius:8px;
+	border-radius:4px;
 	padding-left:10px;
 	padding-right:10px;
 }
@@ -128,7 +129,9 @@ p, h1, h2, h3, h4, a, a:hover {
 	background:@oracle-brown;
 
 	.oracle-img {
+		background-size: cover;
 		height:100%;
+    	background-repeat: no-repeat;
 
 		.img-content {
 			padding-top:20%;
@@ -141,18 +144,42 @@ p, h1, h2, h3, h4, a, a:hover {
 	.oracle-img-one {
 	    background-color: #577346;
 	    background-image: url(https://www.oracle.com/asset/web/i/rh02-panel2.jpg);
+	  /*  background-position: 20% 0%;*/
+	    /*background-size: 100%;*/
+	  /*  background-size: contain;*/
+	/*	background-repeat: no-repeat;*/
 	}
 	.oracle-img-two {
 		background-color: #325C72;
     	background-image: url(https://www.oracle.com/asset/web/i/rh02-panel1.jpg);
+    	
 	}
 	.oracle-img-three {
-		background-image: url(https://www.oracle.com/node/oce/storyhub/prod/api/v1.1/assets/CONTCF5045BA0C044A838303338A58C34379/native);	
+		background-image: url(https://www.oracle.com/node/oce/storyhub/prod/api/v1.1/assets/CONTCF5045BA0C044A838303338A58C34379/native);
+
+
 	}
 
 	.dashed-nav {
-		position:absolute;
-		color:white;
+		padding-top:60%;
+		width:100%;
+		display:inline-flex;
+		color:@oracle-white;
+
+		a {
+			padding-right:30px;
+		}
+
+		div {
+			/*background:white;*/
+			border:2px solid white;
+			height:6px;
+			width:20px;
+		}
+
+		.active {
+			background:white;
+		}
 	}
 
 }
@@ -201,6 +228,11 @@ p, h1, h2, h3, h4, a, a:hover {
 
 
 .footer-copy{
+
+	h3 {
+	   color:fade(@oracle-off-white, 60%);
+	}
+
 	ul {
 		padding: 0;
 		list-style-type: none;
@@ -232,6 +264,11 @@ p, h1, h2, h3, h4, a, a:hover {
 
 
 @media @tablet {
+
+
+	.dashed-nav {
+	 	padding-top:6% !important;
+	}
 
 	.logo {
 		display:none;
@@ -271,12 +308,9 @@ p, h1, h2, h3, h4, a, a:hover {
 
 @media @mobile {
 
-
 	.mobile-nav {
 		display:block;
 	}
-
-
 
    .uk-navbar-center {
   	display:none;

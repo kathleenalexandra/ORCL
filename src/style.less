@@ -331,32 +331,42 @@ a:hover {
 /* page */
 
 @media @tablet {
-  .uk-navbar-center {
-    display: block;
-  }
-}
-
-@media @desktop {
-  .logo {
-    display: block;
-  }
+  .mobile-nav {
+    display:none;
+   }
 
   .uk-navbar-center {
     display: block;
   }
-
   .top-section {
     display: inline-flex;
     min-width: 100%;
   }
 
-  .img-content {
-    padding-top: 20vh !important;
-    position: relative;
-    margin-left: 0%;
-    margin: auto !important;
-  }
+    .img-content {
+      padding-top: 20vh !important;
+      position: relative;
+      margin-left: 0%;
+      margin: auto !important;
+    }
 
+   .img-col {
+    height: 700px;
+    max-height: 90vh;
+
+    p,
+    button {
+      display: block;
+    }
+  }
+}
+
+@media @desktop {
+
+  .top-section {
+    display: inline-flex;
+    min-width: 100%;
+  }
   .img-col {
     height: 700px;
     max-height: 90vh;
@@ -365,6 +375,20 @@ a:hover {
     button {
       display: block;
     }
+  }
+  .logo {
+    display: block;
+  }
+
+  .uk-navbar-center {
+    display: block;
+  }
+
+  .img-content {
+    padding-top: 20vh !important;
+    position: relative;
+    margin-left: 0%;
+    margin: auto !important;
   }
 
   .dashed-nav {

@@ -12762,13 +12762,8 @@ a:hover {
 }
 /* page */
 @media only screen and (min-width: 975px) and (max-width: 1070px) {
-  .uk-navbar-center {
-    display: block;
-  }
-}
-@media only screen and (min-width: 1071px) {
-  .logo {
-    display: block;
+  .mobile-nav {
+    display: none;
   }
   .uk-navbar-center {
     display: block;
@@ -12790,6 +12785,32 @@ a:hover {
   .img-col p,
   .img-col button {
     display: block;
+  }
+}
+@media only screen and (min-width: 1071px) {
+  .top-section {
+    display: inline-flex;
+    min-width: 100%;
+  }
+  .img-col {
+    height: 700px;
+    max-height: 90vh;
+  }
+  .img-col p,
+  .img-col button {
+    display: block;
+  }
+  .logo {
+    display: block;
+  }
+  .uk-navbar-center {
+    display: block;
+  }
+  .img-content {
+    padding-top: 20vh !important;
+    position: relative;
+    margin-left: 0%;
+    margin: auto !important;
   }
   .dashed-nav {
     padding-top: 100px !important;

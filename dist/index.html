@@ -9,217 +9,187 @@
 
 </head>
 <body>
-<!-- <h1>Testing Theme</h1>
-<button class="uk-button uk-button-default" disabled>Testing UIKit</button> -->
-
-
 <!-- navigation --> 
 <nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left nav-left-desktop">
-    	 <ul class="uk-navbar-nav left-nav-items">
-	 	  	<li><a href="#"><div class="logo"> <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 231 30' preserveAspectRatio='xMinYMid'%3E%3Cpath d='M99.61,19.52h15.24l-8.05-13L92,30H85.27l18-28.17a4.29,4.29,0,0,1,7-.05L128.32,30h-6.73l-3.17-5.25H103l-3.36-5.23m69.93,5.23V0.28h-5.72V27.16a2.76,2.76,0,0,0,.85,2,2.89,2.89,0,0,0,2.08.87h26l3.39-5.25H169.54M75,20.38A10,10,0,0,0,75,.28H50V30h5.71V5.54H74.65a4.81,4.81,0,0,1,0,9.62H58.54L75.6,30h8.29L72.43,20.38H75M14.88,30H32.15a14.86,14.86,0,0,0,0-29.71H14.88a14.86,14.86,0,1,0,0,29.71m16.88-5.23H15.26a9.62,9.62,0,0,1,0-19.23h16.5a9.62,9.62,0,1,1,0,19.23M140.25,30h17.63l3.34-5.23H140.64a9.62,9.62,0,1,1,0-19.23h16.75l3.38-5.25H140.25a14.86,14.86,0,1,0,0,29.71m69.87-5.23a9.62,9.62,0,0,1-9.26-7h24.42l3.36-5.24H200.86a9.61,9.61,0,0,1,9.26-7h16.76l3.35-5.25h-20.5a14.86,14.86,0,0,0,0,29.71h17.63l3.35-5.23h-20.6' transform='translate(-0.02 0)' style='fill:%23C74634'/%3E%3C/svg%3E" width="100px"></div> </a></li>
-    	 </ul>
-    </div>
-
-      <div class="uk-navbar-left nav-left-mobile">
-         <ul class="uk-navbar-nav left-nav-items">
-            <li><a><div class="logo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='25' viewBox='0 0 32 25'%3E%3Cg fill='%23C74634'%3E%3Cpath d='M9.9,20.1c-5.5,0-9.9-4.4-9.9-9.9c0-5.5,4.4-9.9,9.9-9.9h11.6c5.5,0,9.9,4.4,9.9,9.9c0,5.5-4.4,9.9-9.9,9.9H9.9 M21.2,16.6c3.6,0,6.4-2.9,6.4-6.4c0-3.6-2.9-6.4-6.4-6.4h-11c-3.6,0-6.4,2.9-6.4,6.4s2.9,6.4,6.4,6.4H21.2'/%3E%3C/g%3E%3C/svg%3E"></div></a></li>
-            <li><a>ITEM</a></li>
-            <li><a>ITEM</a></li>
-         </ul>
-    </div>
-
-
-
-    <div class="uk-navbar-center">
-    	 <ul class="uk-navbar-nav">
-	 	  	<li><a href="#"> <img src="data:image/svg+xml,%3Csvg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m10.1212266 1c5.0372326 0 9.1212266 4.08405043 9.1212266 9.1213526 0 2.1536493-.7465159 4.133053-1.9948779 5.6935382l5.7524247 5.7518269-1.4332625 1.4332823-5.7516795-5.7524977c-1.5605211 1.2485582-3.5400409 1.995203-5.6938314 1.995203-5.03723262 0-9.1212266-4.0840504-9.1212266-9.1213527 0-5.03730217 4.08399398-9.1213526 9.1212266-9.1213526zm0 2.02696725c-3.91778498 0-7.09428736 3.17654628-7.09428736 7.09438535 0 3.9178392 3.17650238 7.0943854 7.09428736 7.0943854 3.9177849 0 7.0942873-3.1765462 7.0942873-7.0943854 0-3.91783907-3.1765024-7.09438535-7.0942873-7.09438535z' fill='%23FBF9F8' fill-rule='evenodd'/%3E%3C/svg%3E" width="20px"></a></li>
-	 	   	<li><a href="#">Products</a></li>
-	 	   	<li><a href="#">Resources</a></li>
-	 	   	<li><a href="#">Support</a></li>
-	 	   	<li><a href="#">Events</a></li>
-	 	   	<li><a href="#">Developer</a></li>
-    	 </ul>
-    </div>
-    <div class="uk-navbar-right">
-    	 <ul class="uk-navbar-nav">
-	 	   	<li><a href="#"> <img src="data:image/svg+xml,%3Csvg width='24px' height='24px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 Z M14,17 L10,17 C8.9456382,17 8.08183488,17.8158778 8.00548574,18.8507377 L8,19 L7.9999083,20.0644348 C9.20489006,20.6632768 10.5631221,21 12,21 C13.437276,21 14.7958624,20.6630902 16.001093,20.0639371 L16,19 C16,17.9456382 15.1841222,17.0818349 14.1492623,17.0054857 L14,17 Z M12,3 C7.02943725,3 3,7.02943725 3,12 C3,14.6709139 4.16346432,17.0700862 6.011229,18.7183529 C6.15016737,16.7059643 7.77779862,15.1043091 9.80035966,15.0048953 L10,15 L14,15 C16.1140799,15 17.8451043,16.6400557 17.9901616,18.7172556 C19.8369514,17.0692289 21,14.6704367 21,12 C21,7.02943725 16.9705627,3 12,3 Z M12,5 C14.206,5 16,6.794 16,9 C16,11.206 14.206,13 12,13 C9.794,13 8,11.206 8,9 C8,6.794 9.794,5 12,5 Z M12,7 C10.897,7 10,7.897 10,9 C10,10.103 10.897,11 12,11 C13.103,11 14,10.103 14,9 C14,7.897 13.103,7 12,7 Z' fill='%23FBF9F8'%3E%3C/path%3E%3C/svg%3E" width="20px"></a></li>
-            <li><a href="#"> <img src="data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.47665 10.8665L7.44975 6.89343L6.74264 1.94368H2.5C2.5 1.94368 -1.03553 6.89343 6.03553 13.9645C13.1066 21.0356 18.0563 17.5 18.0563 17.5L18.0563 13.2574L13.1066 12.5503L9.1335 16.5234' stroke='white' stroke-width='2' stroke-miterlimit='10'/%3E%3C/svg%3E" width="20px"></a></li>
-    	 </ul>
-    </div>
-
+   <div class="uk-navbar-left nav-left-desktop">
+      <ul class="uk-navbar-nav left-nav-items">
+         <li>
+            <a href="#">
+               <div class="logo"> <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 231 30' preserveAspectRatio='xMinYMid'%3E%3Cpath d='M99.61,19.52h15.24l-8.05-13L92,30H85.27l18-28.17a4.29,4.29,0,0,1,7-.05L128.32,30h-6.73l-3.17-5.25H103l-3.36-5.23m69.93,5.23V0.28h-5.72V27.16a2.76,2.76,0,0,0,.85,2,2.89,2.89,0,0,0,2.08.87h26l3.39-5.25H169.54M75,20.38A10,10,0,0,0,75,.28H50V30h5.71V5.54H74.65a4.81,4.81,0,0,1,0,9.62H58.54L75.6,30h8.29L72.43,20.38H75M14.88,30H32.15a14.86,14.86,0,0,0,0-29.71H14.88a14.86,14.86,0,1,0,0,29.71m16.88-5.23H15.26a9.62,9.62,0,0,1,0-19.23h16.5a9.62,9.62,0,1,1,0,19.23M140.25,30h17.63l3.34-5.23H140.64a9.62,9.62,0,1,1,0-19.23h16.75l3.38-5.25H140.25a14.86,14.86,0,1,0,0,29.71m69.87-5.23a9.62,9.62,0,0,1-9.26-7h24.42l3.36-5.24H200.86a9.61,9.61,0,0,1,9.26-7h16.76l3.35-5.25h-20.5a14.86,14.86,0,0,0,0,29.71h17.63l3.35-5.23h-20.6' transform='translate(-0.02 0)' style='fill:%23C74634'/%3E%3C/svg%3E" width="100px"></div>
+            </a>
+         </li>
+         <li class="tablet-nav">
+            <a>
+               <div class="mobile-logo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='25' viewBox='0 0 32 25'%3E%3Cg fill='%23C74634'%3E%3Cpath d='M9.9,20.1c-5.5,0-9.9-4.4-9.9-9.9c0-5.5,4.4-9.9,9.9-9.9h11.6c5.5,0,9.9,4.4,9.9,9.9c0,5.5-4.4,9.9-9.9,9.9H9.9 M21.2,16.6c3.6,0,6.4-2.9,6.4-6.4c0-3.6-2.9-6.4-6.4-6.4h-11c-3.6,0-6.4,2.9-6.4,6.4s2.9,6.4,6.4,6.4H21.2'/%3E%3C/g%3E%3C/svg%3E"></div>
+            </a>
+         </li>
+         <li class="mobile-nav">
+            <a>
+               <div class="hamburger"></div>
+            </a>
+         </li>
+         <li class="mobile-nav"><a><img src="data:image/svg+xml,%3Csvg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m10.1212266 1c5.0372326 0 9.1212266 4.08405043 9.1212266 9.1213526 0 2.1536493-.7465159 4.133053-1.9948779 5.6935382l5.7524247 5.7518269-1.4332625 1.4332823-5.7516795-5.7524977c-1.5605211 1.2485582-3.5400409 1.995203-5.6938314 1.995203-5.03723262 0-9.1212266-4.0840504-9.1212266-9.1213527 0-5.03730217 4.08399398-9.1213526 9.1212266-9.1213526zm0 2.02696725c-3.91778498 0-7.09428736 3.17654628-7.09428736 7.09438535 0 3.9178392 3.17650238 7.0943854 7.09428736 7.0943854 3.9177849 0 7.0942873-3.1765462 7.0942873-7.0943854 0-3.91783907-3.1765024-7.09438535-7.0942873-7.09438535z' fill='%23FBF9F8' fill-rule='evenodd'/%3E%3C/svg%3E"></a></li>
+      </ul>
+   </div>
+   <div class="uk-navbar-center">
+      <ul class="uk-navbar-nav">
+         <li><a href="#"> <img src="data:image/svg+xml,%3Csvg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m10.1212266 1c5.0372326 0 9.1212266 4.08405043 9.1212266 9.1213526 0 2.1536493-.7465159 4.133053-1.9948779 5.6935382l5.7524247 5.7518269-1.4332625 1.4332823-5.7516795-5.7524977c-1.5605211 1.2485582-3.5400409 1.995203-5.6938314 1.995203-5.03723262 0-9.1212266-4.0840504-9.1212266-9.1213527 0-5.03730217 4.08399398-9.1213526 9.1212266-9.1213526zm0 2.02696725c-3.91778498 0-7.09428736 3.17654628-7.09428736 7.09438535 0 3.9178392 3.17650238 7.0943854 7.09428736 7.0943854 3.9177849 0 7.0942873-3.1765462 7.0942873-7.0943854 0-3.91783907-3.1765024-7.09438535-7.0942873-7.09438535z' fill='%23FBF9F8' fill-rule='evenodd'/%3E%3C/svg%3E" width="20px"></a></li>
+         <li><a href="#">Products</a></li>
+         <li><a href="#">Resources</a></li>
+         <li><a href="#">Support</a></li>
+         <li><a href="#">Events</a></li>
+         <li><a href="#">Developer</a></li>
+      </ul>
+   </div>
+   <div class="uk-navbar-right">
+      <ul class="uk-navbar-nav">
+         <li><a href="#"> <img src="data:image/svg+xml,%3Csvg width='24px' height='24px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 Z M14,17 L10,17 C8.9456382,17 8.08183488,17.8158778 8.00548574,18.8507377 L8,19 L7.9999083,20.0644348 C9.20489006,20.6632768 10.5631221,21 12,21 C13.437276,21 14.7958624,20.6630902 16.001093,20.0639371 L16,19 C16,17.9456382 15.1841222,17.0818349 14.1492623,17.0054857 L14,17 Z M12,3 C7.02943725,3 3,7.02943725 3,12 C3,14.6709139 4.16346432,17.0700862 6.011229,18.7183529 C6.15016737,16.7059643 7.77779862,15.1043091 9.80035966,15.0048953 L10,15 L14,15 C16.1140799,15 17.8451043,16.6400557 17.9901616,18.7172556 C19.8369514,17.0692289 21,14.6704367 21,12 C21,7.02943725 16.9705627,3 12,3 Z M12,5 C14.206,5 16,6.794 16,9 C16,11.206 14.206,13 12,13 C9.794,13 8,11.206 8,9 C8,6.794 9.794,5 12,5 Z M12,7 C10.897,7 10,7.897 10,9 C10,10.103 10.897,11 12,11 C13.103,11 14,10.103 14,9 C14,7.897 13.103,7 12,7 Z' fill='%23FBF9F8'%3E%3C/path%3E%3C/svg%3E" width="20px"></a></li>
+         <li><a href="#"> <img src="data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.47665 10.8665L7.44975 6.89343L6.74264 1.94368H2.5C2.5 1.94368 -1.03553 6.89343 6.03553 13.9645C13.1066 21.0356 18.0563 17.5 18.0563 17.5L18.0563 13.2574L13.1066 12.5503L9.1335 16.5234' stroke='white' stroke-width='2' stroke-miterlimit='10'/%3E%3C/svg%3E" width="20px"></a></li>
+      </ul>
+   </div>
 </nav>
 <!-- navigation --> 
+<div class="wrapper">
+   <!-- section --> 
+   <div class="uk-grid-collapse uk-child-width-expand@s uk-text-left uk-padding-remove top-section" >
+      <!-- one --> 
+      <div class="img-col">
+         <div class="oracle-img oracle-img-one">
+            <div class="img-content">
+               <h2>Oracle Cloud</h2>
+               <h1>Infrastructure</h1>
+               <h3>Highly Automated and Secure</h3>
+               <p> 
+                  Oracle Cloud infrastructure combines the elasticity and utility of public cloud with the granular control, security, and predictability of on-premises infrastructure. Simplify operations and spend less with database, platform, and infrastructure services running in public regions and customer data centers. 
+               </p>
+               <button class="uk-button uk-button-primary">Explore Products</button>
+            </div>
+         </div>
+      </div>
+      <!-- one --> 
+      <!-- two --> 
+      <div class="img-col">
+         <div class="oracle-img oracle-img-two ">
+            <div class="img-content">
+               <h2>Oracle Cloud</h2>
+               <h1>Applications</h1>
+               <p> 
+                  Streamline your enterprise business process. With ERP Financials, Procurement, Project Portfolio Management and more, you can increase productivity, lower costs, and improve controls.
+               </p>
+               <button class="uk-button uk-button-primary">Explore Products</button>
+            </div>
+         </div>
+      </div>
+      <!-- two --> 
+      <!-- three --> 
+      <div class="img-col">
+         <div class="oracle-img oracle-img-three">
+            <div class="img-content">
+               <h2>Gartner positions Oracle Analytics as a Visionary</h2>
+               <p> 
+                  For the second year in a row, Oracle has been named a Visionary in the Gartner 2021 Magic Quadrant for Analytics and Business Intelligence Platforms.
+               </p>
+               <button class="uk-button uk-button-secondary">Read Report</button>
+            </div>
+
+            <div class="dashed-nav"> dashed nav </div>
 
 
-<div class="wrapper"> 
-<!-- section --> 
-<div class="uk-grid-collapse uk-child-width-expand@s uk-text-left uk-padding-remove top-section" >
-	<!-- one --> 
-    <div class="img-col">
-        <div class="oracle-img oracle-img-one">
-        	<div class="img-content">
-                <h2>Oracle Cloud</h2>
-                <h1>Infrastructure</h1>
-                <h3>Highly Automated and Secure</h3>
-	        	<p> 
-	        		Oracle Cloud infrastructure combines the elasticity and utility of public cloud with the granular control, security, and predictability of on-premises infrastructure. Simplify operations and spend less with database, platform, and infrastructure services running in public regions and customer data centers. 
-	        	</p>
-                <button class="uk-button uk-button-primary">Explore Products</button>
-        	</div>
-        </div>
-    </div>
-    <!-- one --> 
-    <!-- two --> 
-    <div class="img-col">
-        <div class="oracle-img oracle-img-two ">
-        	<div class="img-content">
-                <h2>Oracle Cloud</h2>
-                <h1>Applications</h1>
-	        	<p> 
-	        		Streamline your enterprise business process. With ERP Financials, Procurement, Project Portfolio Management and more, you can increase productivity, lower costs, and improve controls.
-	        	</p>
-                <button class="uk-button uk-button-primary">Explore Products</button>
-        	</div>
-        </div>
-    </div>
-    <!-- two --> 
-    <!-- three --> 
-    <div class="img-col">
-        <div class="oracle-img oracle-img-three">
-        	<div class="img-content">
-                <h2>Gartner positions Oracle Analytics as a Visionary</h2>
-	        	<p> 
-	        		For the second year in a row, Oracle has been named a Visionary in the Gartner 2021 Magic Quadrant for Analytics and Business Intelligence Platforms.
-	        	</p>
-                <button class="uk-button uk-button-secondary">Read Report</button>
-        	</div>
-        </div>
-    </div>
-    <!-- three --> 
-</div>
-<!-- section --> 
-
-
-
-<div class="footer-border"></div>
-<!-- footer --> 
-<div class="uk-section uk-section-muted">
-
-
-
-    <div class="uk-container">
-    	 <!-- footer items --> 
-        <div class="uk-child-width-expand@s uk-text-left footer-copy footer-section" >
+         </div>
+      </div>
+      <!-- three --> 
+   </div>
+   <!-- section --> 
+   <div class="footer-border"></div>
+   <!-- footer --> 
+   <div class="uk-section uk-section-muted">
+      <div class="uk-container">
+         <!-- footer items --> 
+         <div class="uk-child-width-expand@s uk-text-left footer-copy footer-section" >
             <div>
-            	 <h3>Resources for</h3>
-                <ul>
-                	<li> <a>Developers</a></li>
-                	<li> <a>Startups</a></li>
-                	 <li> <a>Students and Educators</a></li>
-                </ul>
+               <h3>Resources for</h3>
+               <ul>
+                  <li> <a>Developers</a></li>
+                  <li> <a>Startups</a></li>
+                  <li> <a>Students and Educators</a></li>
+               </ul>
             </div>
             <div>
-            	<h3>Partners</h3>
-                <ul>
-                	<li> <a>Oracle PartnerNetwork</a></li>
-                	<li> <a>Find a Partner</a></li>
-                	 <li> <a>Log in to OPN</a></li>
-                </ul>
+               <h3>Partners</h3>
+               <ul>
+                  <li> <a>Oracle PartnerNetwork</a></li>
+                  <li> <a>Find a Partner</a></li>
+                  <li> <a>Log in to OPN</a></li>
+               </ul>
             </div>
-
             <div>
-            	<h3>Solutions</h3>
-                <ul>
-                	<li> <a>Artificial Intelligence</a></li>
-                	<li> <a>Internet of Things</a></li>
-                	 <li> <a>Blockchain</a></li>
-                </ul>
+               <h3>Solutions</h3>
+               <ul>
+                  <li> <a>Artificial Intelligence</a></li>
+                  <li> <a>Internet of Things</a></li>
+                  <li> <a>Blockchain</a></li>
+               </ul>
             </div>
-
-             <div>
-             	<h3>What's New</h3>
-                <ul>
-                	<li> <a>How we’re taking on COVID-19</a></li>
-                	<li> <a>Java SE Downloads</a></li>
-                	 <li> <a>Try Oracle Cloud Free Tier</a></li>
-                </ul>
+            <div>
+               <h3>What's New</h3>
+               <ul>
+                  <li> <a>How we’re taking on COVID-19</a></li>
+                  <li> <a>Java SE Downloads</a></li>
+                  <li> <a>Try Oracle Cloud Free Tier</a></li>
+               </ul>
             </div>
-
-             <div>
-             <h3>Contact Us</h3>
-                <ul>
-                	 <li> <a>US Sales: +1.800.633.0738</a></li>
-                	 <li> <a>How can we help?</a></li>
-                	 <li> <a>Subscribe to emails</a></li>
-                </ul>
+            <div>
+               <h3>Contact Us</h3>
+               <ul>
+                  <li> <a>US Sales: +1.800.633.0738</a></li>
+                  <li> <a>How can we help?</a></li>
+                  <li> <a>Subscribe to emails</a></li>
+               </ul>
             </div>
-        </div>
-    </div>
-        <!-- footer items --> 
-
-        <!-- breadcrums -->
-    </div>
+         </div>
+      </div>
+      <!-- footer items --> 
+      <!-- breadcrums -->
+   </div>
 </div>
 <!-- footer --> 
 </div>
-
-
 <!-- end full site wrapper --> 
-
 <!-- breadcrums --> 
 <div class="social-breadcrums uk-grid-collapse uk-text-center" uk-grid>
-    <div class="uk-width-auto@m">
-        <div>
-        <ul> 
-          <li>One </li>
-          <li>Country/Region</li>
-        <ul> 
-        </div>
-    </div>
-
-    <div class="uk-width-expand@m">
-        <div >
-        <ul> 
-          <li>2021 Oracle</li>
-          <li>|</li>
-          <li>Site Map</li>
-          <li>Privacy/Do Not Sell My Info</li>
-          <li>Cookie Preferences</li>
-          <li>Ad Choices</li>
-          <li>Carreerrs</li>
-        <ul> 
-        
-        </div>
-    </div>
-    <div class="uk-width-1-3@m ">
-        <div>
-        <ul> 
-          <li>One </li>
-          <li>Country/Region</li>
-        <ul> 
-        </div>
-    </div>
+   <div class="uk-width-auto@m">
+      <div>
+         <ul>
+         <li><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill-rule='evenodd' viewBox='0 0 16 16'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M8,0.666666667 C3.94947917,0.666666667 0.666666667,3.94947917 0.666666667,8 C0.666666667,12.0505208 3.94947917,15.3333333 8,15.3333333 C12.0505208,15.3333333 15.3333333,12.0505208 15.3333333,8 C15.3333333,3.94947917 12.0505208,0.666666667 8,0.666666667 Z M1.88841146,8 C1.88841146,7.36119792 1.98723958,6.7453125 2.16914063,6.16666667 L3.83919271,6.16666667 C3.76471354,6.73671875 3.72174479,7.34544271 3.72174479,8 C3.72174479,8.65455729 3.76471354,9.26328125 3.83919271,9.83333333 L2.17057292,9.83333333 C1.98723958,9.2546875 1.88841146,8.63880208 1.88841146,8 Z M2.71197917,11.0565104 L4.06263021,11.0565104 C4.25455729,11.8729167 4.51666667,12.5904948 4.81458333,13.2135417 C3.94661458,12.6807292 3.221875,11.9373698 2.71197917,11.0565104 Z M4.06263021,4.94492187 L2.71197917,4.94492187 C3.22330729,4.06263021 3.94661458,3.31927083 4.81458333,2.78789062 C4.51666667,3.4109375 4.25455729,4.12851562 4.06263021,4.94492187 Z M7.38841146,14.0800781 C7.14205729,14.0557292 6.9,14.0141927 6.66223958,13.9626302 L6.66223958,13.9626302 C6.14947917,13.2479167 5.64960937,12.2940104 5.32161458,11.0565104 L7.38841146,11.0565104 L7.38841146,14.0800781 Z M7.38841146,9.83333333 L5.07096354,9.83333333 C4.98932292,9.27044271 4.94348958,8.66028646 4.94348958,8 L4.94348958,8 C4.94348958,7.33828125 4.99075521,6.72955729 5.07239583,6.16666667 L7.38697917,6.16666667 L7.38697917,9.83333333 L7.38841146,9.83333333 Z M7.38841146,4.94492187 L5.32018229,4.94492187 C5.64817708,3.70742188 6.14947917,2.75351562 6.66223958,2.03880208 C6.9,1.98580729 7.14205729,1.94427083 7.38841146,1.91992188 L7.38841146,4.94492187 L7.38841146,4.94492187 Z M8.61158854,1.91992188 C8.85794271,1.94427083 9.1,1.98580729 9.33776042,2.03880208 C9.85052083,2.75351562 10.3518229,3.70742188 10.6798177,4.94492187 L8.61158854,4.94492187 L8.61158854,1.91992188 Z M9.33776042,13.9626302 C9.1,14.015625 8.85794271,14.0557292 8.61015625,14.0800781 L8.61015625,11.0565104 L10.6783854,11.0565104 C10.3503906,12.2940104 9.85052083,13.2479167 9.33776042,13.9626302 Z M10.9290365,9.83333333 L8.61158854,9.83333333 L8.61158854,6.16666667 L10.9261719,6.16666667 C11.0078125,6.72955729 11.0550781,7.33828125 11.0550781,8 C11.0550781,8.66028646 11.0092448,9.27044271 10.9290365,9.83333333 Z M13.2880208,4.94492187 L11.9373698,4.94492187 C11.7454427,4.12851562 11.4833333,3.4109375 11.1854167,2.78789062 C12.0533854,3.31927083 12.778125,4.06263021 13.2880208,4.94492187 Z M11.1854167,13.2135417 C11.4833333,12.5890625 11.7454427,11.8729167 11.9373698,11.0565104 L13.2880208,11.0565104 C12.778125,11.9373698 12.0533854,12.6807292 11.1854167,13.2135417 Z M12.159375,9.83333333 C12.2338542,9.26328125 12.2768229,8.65455729 12.2768229,8 C12.2768229,7.34544271 12.2338542,6.73671875 12.159375,6.16666667 L13.8294271,6.16666667 C14.0113281,6.7453125 14.1101562,7.36119792 14.1101562,8 C14.1101562,8.63880208 14.0113281,9.2546875 13.8294271,9.83333333 L12.159375,9.83333333 Z'/%3E%3C/g%3E%3C/svg%3E" height="20px"></li>
+         <li>Country/Region</li>
+         <ul>
+      </div>
+   </div>
+   <div class="uk-width-expand@m">
+      <div >
+         <ul>
+         <li>2021 Oracle</li>
+         <li>|</li>
+         <li>Site Map</li>
+         <li>Privacy/Do Not Sell My Info</li>
+         <li>Cookie Preferences</li>
+         <li>Ad Choices</li>
+         <li>Carreerrs</li>
+         <ul>
+      </div>
+   </div>
+   <div class="uk-width-1-3@m ">
+      <div>
+         <ul>
+         <li><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill-rule='evenodd' viewBox='0 0 25 30'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M23,12.073725 C23,5.96030998 18.0830126,1 12.0102986,1 L12,1 C5.92728597,1 1,5.96030998 1,12.073725 C1,17.6007959 5.03016748,22.1694418 10.2892957,23 L10.2892957,15.2726987 L7.47779049,15.2726987 L7.47779049,12.073725 L17.289296,12.073725 L10.2915843,9.63388837 C10.2915843,6.85883339 11.923333,5.31982407 14.4361802,5.31982407 C15.6388224,5.31982407 16.8895246,5.55251859 16.8895246,5.55251859 L16.8895246,8.25960834 L15.5118069,8.25960834 C14.1455321,8.25960834 13.7084157,9.12126924 13.7084157,9.99675359 L13.7118485,12.073725 L16.7670862,12.073725 L16.2784771,15.2726987 L13.7118485,15.2726987 L13.7118485,23 C18.9709768,22.1694418 23,17.6007959 23,12.073725'/%3E%3C/g%3E%3C/svg%3E" height="20px"></li>
+         <li><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill-rule='evenodd' viewBox='0 0 25 30'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M23,5.1046638 C22.1900726,5.46038162 21.3199026,5.70135176 20.4076585,5.81036206 C21.3409397,5.25574825 22.0552441,4.37697223 22.3918373,3.32894337 C21.5197549,3.84339549 20.5549181,4.21632547 19.5269701,4.41522145 C18.7046116,3.54696397 17.5303603,3 16.2337115,3 C13.7417742,3 11.722215,5.00904073 11.722215,7.48567827 C11.722215,7.83661494 11.7604642,8.17894554 11.8379189,8.50693267 C8.0894945,8.32046768 4.76468031,6.53518494 2.53857522,3.82235841 C2.15034555,4.48598253 1.92658756,5.25479202 1.92658756,6.07715043 C1.92658756,7.63198157 2.52040683,9.00417264 3.73195115,9.80836267 C2.9927848,9.7844569 2.44103968,9.58269222 1.48480897,9.24896771 L1.48480897,9.30538532 C1.48480897,11.4769853 3.24331725,13.2890425 5.30686313,13.7011779 C4.929152,13.8044508 4.63176425,13.8579997 4.21867258,13.8579997 C3.9298909,13.8579997 3.69848307,13.8312253 3.42117616,13.7776764 C3.99587082,15.5581779 5.68744295,16.8576955 7.66205937,16.893076 C6.11774677,18.0969705 4.18616073,18.8122311 2.0709784,18.8122311 C1.70761073,18.8122311 1.35380536,18.791194 1,18.7491198 C2.99852219,20.0218629 5.37188682,20.7638979 7.9211979,20.7638979 C16.219368,20.7638979 20.7595514,13.9306733 20.7595514,8.00395532 C20.7595514,7.81079671 20.7566827,7.61763811 20.7471204,7.42447951 C21.6297214,6.79336724 22.3956622,6.00256444 23,5.1046638'/%3E%3C/g%3E%3C/svg%3E" height="20px"></li>
+         <li><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill-rule='evenodd' viewBox='0 0 25 30'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M19.750875,13.2518611 C19.750875,10.0424583 17.7563611,8.94765278 15.9108056,8.94765278 C14.2042778,8.94765278 13.0871667,10.0519306 12.7670972,10.6987917 L12.7250833,10.6987917 L12.7250833,9.243125 L9.54409722,9.243125 L9.54409722,19.7502639 L12.8515833,19.7502639 L12.8515833,14.0536389 C12.8515833,12.5347222 13.8139306,11.7960417 14.7950694,11.7960417 C15.7236528,11.7960417 16.4435417,12.3182361 16.4435417,14.0114722 L16.4435417,19.7502639 L19.750875,19.7502639 L19.750875,13.2518611 Z M7.810375,5.88063889 C7.810375,4.78384722 6.95665278,3.98130556 5.90355556,3.98130556 C4.85045833,3.98130556 3.99658333,4.78384722 3.99658333,5.88063889 C3.99658333,6.97758333 4.85045833,7.77920833 5.90355556,7.77920833 C6.95665278,7.77920833 7.810375,6.97758333 7.810375,5.88063889 L7.810375,5.88063889 Z M4.24988889,19.7421667 L7.55722222,19.7421667 L7.55722222,9.23502778 L4.24988889,9.23502778 L4.24988889,19.7421667 Z M23.0006111,2.62402778 L23.0006111,21.3759722 C23.0006111,22.2729306 22.2735417,23.0001528 21.3767361,23.0001528 L2.62402778,23.0001528 C1.72706944,23.0001528 1,22.2729306 1,21.3759722 L1,2.62402778 C1,1.72706944 1.72706944,1 2.62402778,1 L21.3767361,1 C22.2735417,1 23.0006111,1.72706944 23.0006111,2.62402778 L23.0006111,2.62402778 Z'/%3E%3C/g%3E%3C/svg%3E" height="20px"></li>
+         <li><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill-rule='evenodd' viewBox='0 0 25 30'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M22.54025,6.49845161 C23,8.28090323 23,12 23,12 C23,12 23,15.7189677 22.54025,17.5016774 C22.28725,18.4850323 21.541875,19.2594839 20.595125,19.5224516 C18.879625,20 12,20 12,20 C12,20 5.120375,20 3.40475,19.5224516 C2.458125,19.2594839 1.712625,18.4850323 1.459625,17.5016774 C1,15.7189677 1,12 1,12 C1,12 1,8.28090323 1.459625,6.49845161 C1.712625,5.51496774 2.458125,4.74051613 3.40475,4.47767742 C5.120375,4 12,4 12,4 C12,4 18.879625,4 20.595125,4.47767742 C21.541875,4.74051613 22.28725,5.51496774 22.54025,6.49845161 Z M9.9999625,16.000025 L15.9999625,12.0001779 L9.9999625,8.000025 L9.9999625,16.000025 Z'/%3E%3C/g%3E%3C/svg%3E" height="20px"></li>
+         <ul>
+      </div>
+   </div>
 </div>
 <!-- breadcrums --> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>

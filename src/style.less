@@ -86,20 +86,33 @@ p, h1, h2, h3, h4, a, a:hover {
 }
 
 
-
 .wrapper {
   position: relative;
   min-height: 100vh;
   overflow:hidden;
 }
 
-.nav-left-mobile {
-	display:none;
-}
 
 .top-section {
 	display:inline-flex;
 	min-width:100%;
+}
+
+
+.tablet-nav, .mobile-nav {
+	display:none;
+}
+
+
+.mobile-logo {
+	margin-top:30px;
+	height:50px;
+}
+
+.hamburger {
+	background: url("../img/hamburger.svg"); 
+	height:17px;
+	width:17px;
 }
 
 
@@ -136,6 +149,12 @@ p, h1, h2, h3, h4, a, a:hover {
 	.oracle-img-three {
 		background-image: url(https://www.oracle.com/node/oce/storyhub/prod/api/v1.1/assets/CONTCF5045BA0C044A838303338A58C34379/native);	
 	}
+
+	.dashed-nav {
+		position:absolute;
+		color:white;
+	}
+
 }
 
 
@@ -214,20 +233,15 @@ p, h1, h2, h3, h4, a, a:hover {
 
 @media @tablet {
 
-	.nav-left-desktop {
+	.logo {
 		display:none;
 	}
 
-
-	.nav-left-mobile {
+	.tablet-nav {
 		display:block;
 	}
 
-
-   .left-nav-items > ul li:nth-child(n+2) {
-        display:none;
-   }
-
+	
 
   .top-section {
 	min-width:100%;
@@ -256,6 +270,14 @@ p, h1, h2, h3, h4, a, a:hover {
 
 
 @media @mobile {
+
+
+	.mobile-nav {
+		display:block;
+	}
+
+
+
    .uk-navbar-center {
   	display:none;
   }

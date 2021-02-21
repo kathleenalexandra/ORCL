@@ -12530,10 +12530,9 @@ iframe.uk-cover {
   min-height: 60px;
 }
 .uk-button-primary {
-  background-color: #ffffff;
   color: #ffffff;
-  background: transparent;
   border: 1px solid #ffffff;
+  background: transparent;
   text-transform: none;
   border-radius: 4px;
   padding-left: 10px;
@@ -12549,7 +12548,6 @@ iframe.uk-cover {
   padding-right: 10px;
 }
 .uk-button-secondary {
-  background-color: #ffffff;
   color: black;
   background: #ffffff;
   mix-blend-mode: screen;
@@ -12559,10 +12557,9 @@ iframe.uk-cover {
   padding-right: 10px;
 }
 .uk-button-secondary:hover {
-  background-color: #ffffff;
   color: #ffffff;
-  background: transparent;
   border: 1px solid #ffffff;
+  background: transparent;
   text-transform: none;
   border-radius: 4px;
   padding-left: 10px;
@@ -12591,8 +12588,8 @@ a:hover {
   display: none;
 }
 .mobile-logo {
-  margin-top: 30px;
-  height: 50px;
+  margin-top: 10px;
+  height: 30px;
 }
 .hamburger {
   background: url("../img/hamburger.svg");
@@ -12614,9 +12611,9 @@ a:hover {
   background-repeat: no-repeat;
 }
 .img-col .oracle-img .img-content {
-  padding-top: 15vh;
+  padding-top: 10vh;
   position: relative;
-  margin: auto;
+  margin-left: 5%;
   width: 70%;
 }
 .img-col .oracle-img-one {
@@ -12641,7 +12638,7 @@ a:hover {
 }
 .img-col .dashed-nav div {
   background: #ffffff;
-  border: 2px solid white;
+  border: 2px solid #ffffff;
   height: 2px;
   width: 18px;
 }
@@ -12693,7 +12690,8 @@ a:hover {
 }
 .footer-copy h3 {
   color: #ffffff;
-  font-size: 1.3em;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 .footer-copy ul {
   padding: 0;
@@ -12751,6 +12749,12 @@ a:hover {
     display: inline-flex;
     min-width: 100%;
   }
+  .img-content {
+    padding-top: 20vh !important;
+    position: relative;
+    margin-left: 0%;
+    margin: auto !important;
+  }
   .img-col {
     height: 700px;
     max-height: 90vh;
@@ -12766,7 +12770,8 @@ a:hover {
     height: 6px !important;
     width: 24px !important;
   }
-  .mobile-nav {
+  .mobile-nav,
+  .tablet-nav {
     display: none;
   }
   .footer-section {

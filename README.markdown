@@ -5,5 +5,5 @@ my original codepen can be found here
 A Pen created on CodePen.io. Original URL: [https://codepen.io/kbryan24/pen/abBwKyw](https://codepen.io/kbryan24/pen/abBwKyw)
 
 the live prototype can be viewed here: 
-[khttps://athleenbryan-prototype-link.netlify.app](https://kathleenbryan-prototype-link.netlify.app)
+[https://kathleenbryan-prototype-link.netlify.app](https://kathleenbryan-prototype-link.netlify.app)
 

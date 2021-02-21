@@ -5,6 +5,7 @@
 @tablet: ~"only screen and (min-width: 975px) and (max-width: 1070px)";
 
 @oracle-orange: #c74634;
+@oracle-light-brown: #524d47;
 @oracle-brown: #312e2a;
 @oracle-white: #ffffff;
 @oracle-off-white: #fbf9f8;
@@ -14,6 +15,10 @@
 
 /* theme*/
 @global-link-color: @oracle-white;
+
+.light-brown-bk() {
+  background: @oracle-light-brown;
+}
 
 .brown-bk() {
   background: @oracle-brown;
@@ -34,7 +39,6 @@
   border-radius: 4px;
   padding-left: 10px;
   padding-right: 10px;
-  
 }
 
 .oracle-button-prime() {
@@ -129,6 +133,39 @@ a:hover {
   background: url("../img/hamburger.svg");
   height: 17px;
   width: 17px;
+}
+
+.desktop-large {
+  display:none;
+}
+
+
+.uk-navbar-nav {
+  .account {
+    background:@oracle-brown;
+  }
+
+  .sales {
+    border: 1.5px solid @oracle-white;
+  }
+
+  .nav-button {
+    max-height:40px;
+    min-width:150px;
+    display:inline-flex;
+    .oracle-btn; 
+
+    p {
+      margin-top:10px;
+      font-weight:bold;
+    }
+
+    img {
+      min-height:25px;
+      min-width:25px;
+      margin-right:10px;
+    }
+  }
 }
 
 .img-col {
@@ -294,6 +331,7 @@ a:hover {
       display: none;
     }
   }
+/* page */ 
 
 
 @media @tablet {
@@ -304,7 +342,6 @@ a:hover {
 
 
 @media @desktop {
-
   .logo {
     display:block;
   }
@@ -328,7 +365,6 @@ a:hover {
   .img-col {
   height: 700px;
   max-height: 90vh;
-
 
    p, button {
     display:block;
@@ -360,11 +396,20 @@ a:hover {
     color: fade(@oracle-off-white, 60%);
     }
   }
-
     h3::after {
     display:none;
   }
 
+}
+
+@media @large {
+  .desktop-regular {
+    display:none;
+  }
+
+  .desktop-large {
+    display:block;
+  }
 }
 
 

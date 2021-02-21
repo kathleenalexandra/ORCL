@@ -12596,6 +12596,33 @@ a:hover {
   height: 17px;
   width: 17px;
 }
+.desktop-large {
+  display: none;
+}
+.uk-navbar-nav .account {
+  background: #312e2a;
+}
+.uk-navbar-nav .sales {
+  border: 1.5px solid #ffffff;
+}
+.uk-navbar-nav .nav-button {
+  max-height: 40px;
+  min-width: 150px;
+  display: inline-flex;
+  text-transform: none;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.uk-navbar-nav .nav-button p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.uk-navbar-nav .nav-button img {
+  min-height: 25px;
+  min-width: 25px;
+  margin-right: 10px;
+}
 .img-col {
   height: 260px;
   max-height: 40%;
@@ -12733,6 +12760,7 @@ a:hover {
 .footer-copy ul {
   display: none;
 }
+/* page */
 @media only screen and (min-width: 975px) and (max-width: 1070px) {
   .uk-navbar-center {
     display: block;
@@ -12786,5 +12814,13 @@ a:hover {
   }
   h3::after {
     display: none;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .desktop-regular {
+    display: none;
+  }
+  .desktop-large {
+    display: block;
   }
 }

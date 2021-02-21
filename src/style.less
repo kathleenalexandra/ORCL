@@ -6,12 +6,14 @@
 
 @oracle-orange: #C74634;
 @oracle-brown: #312e2a;
+@oracle-white: #ffffff;
 
 @oracle-sans-light: Arial;
 @oracle-sans-bold: Arial Narrow;
 
 /* theme*/ 
-@global-link-color: #ffffff;
+@global-link-color: @oracle-white;
+
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
 	.brown-bk; 
@@ -30,12 +32,12 @@
 }
 
 .nav-text() { 
-	color:white;
+	color:@oracle-white;
 	text-transform: none;
 }
 
 .uk-button-primary{
-    background-color: #ffffff;
+    background-color: @oracle-white;
     .oracle-button-prime
 }
 
@@ -44,9 +46,9 @@
 }
 
 .oracle-button-prime() { 
-	color:white;
+	color:@oracle-white;
 	background:transparent;
-	border:1px solid white;
+	border:1px solid @oracle-white;
 	text-transform:none;
 	border-radius:8px;
 	padding-left:10px;
@@ -54,19 +56,19 @@
 }
 
 .uk-button-secondary{
-    background-color: white;
+    background-color: @oracle-white;
     .oracle-button-second
 }
 
 .uk-button-secondary:hover{
-    background-color: white;
+    background-color: @oracle-white;
     .oracle-button-prime
 }
 
 
 .oracle-button-second() { 
 	color:black;
-	background:white;
+	background:@oracle-white;
 	mix-blend-mode: screen;
 	text-transform:none;
 	border-radius:8px;
@@ -79,14 +81,20 @@
 
 /* page */ 
 
-p, h1, h2, h3, h4 {
-	color:#ffffff;
+p, h1, h2, h3, h4, a, a:hover {
+	color:@oracle-white;
 }
 
 
 
 .wrapper {
-	max-height:100vh;
+  position: relative;
+  min-height: 100vh;
+  overflow:hidden;
+}
+
+.nav-left-mobile {
+	display:none;
 }
 
 .top-section {
@@ -96,14 +104,12 @@ p, h1, h2, h3, h4 {
 
 
 .footer-section {
-
 	display:inline-flex;
 	min-width:100%;
 }
 
 
 .img-col {
-
 	height:700px;
 	max-height: 90vh;
 	background:@oracle-brown;
@@ -111,27 +117,24 @@ p, h1, h2, h3, h4 {
 	.oracle-img {
 		height:100%;
 
-
 		.img-content {
 			padding-top:20%;
 			position:relative;
 			margin:auto;
 			width:80%;
 		}
-
 	}
+
 	.oracle-img-one {
 	    background-color: #577346;
 	    background-image: url(https://www.oracle.com/asset/web/i/rh02-panel2.jpg);
-
 	}
 	.oracle-img-two {
 		background-color: #325C72;
     	background-image: url(https://www.oracle.com/asset/web/i/rh02-panel1.jpg);
 	}
 	.oracle-img-three {
-		background-image: url(https://www.oracle.com/node/oce/storyhub/prod/api/v1.1/assets/CONTCF5045BA0C044A838303338A58C34379/native);
-		
+		background-image: url(https://www.oracle.com/node/oce/storyhub/prod/api/v1.1/assets/CONTCF5045BA0C044A838303338A58C34379/native);	
 	}
 }
 
@@ -169,7 +172,6 @@ p, h1, h2, h3, h4 {
 	}
 }
 
-
 .footer-border {
 	height:12px;
 	width:100%;
@@ -187,11 +189,15 @@ p, h1, h2, h3, h4 {
 }
 
 .social-breadcrums {
-
-	color:white;
-	font-size:11px;
-	padding-top:10%;
-	/*background:blue;*/
+	overflow:hidden;
+	display:inline-flex;
+	min-width:100%;
+	max-width:100%;
+	background:@oracle-brown;
+	position:relative;
+	color:@oracle-white;
+	font-size:0.8rem;
+	padding-top:2%;
 
 	ul {
 		display:inline-flex;
@@ -208,14 +214,42 @@ p, h1, h2, h3, h4 {
 
 @media @tablet {
 
+	.nav-left-desktop {
+		display:none;
+	}
+
+
+
+	.nav-left-mobile {
+		display:block;
+	}
+
+
+	.left-nav-items > ul li:nth-child(n+2) {
+        display:none;
+    }
+
+
   .top-section {
 	min-width:100%;
   }
 
-  
-  .uk-navbar-center {
-  	display:none;
+  .footer-copy {
+	display:block;
+
+
+
+	 h3::after {
+     content: '';
+     height:15px;
+     width:15px;
+     float:right;
+     background: url("../img/arrow.svg"); 
+      background-repeat: no-repeat;
+	
+	}
   }
+
 
 
   .footer-copy{
@@ -223,15 +257,14 @@ p, h1, h2, h3, h4 {
   		display:none;
   	}
   }
-
-
- 
 }
 
 
 @media @mobile {
 
-
+   .uk-navbar-center {
+  	display:none;
+  }
 
   .img-content {
   	p {
@@ -244,11 +277,6 @@ p, h1, h2, h3, h4 {
   }
 
 
-  .footer-section {
-	display:block;
-  }
-
-
 
   .img-col {
   	height:300px;
@@ -257,9 +285,6 @@ p, h1, h2, h3, h4 {
   	button {
   		display:none;
   	}
-
-  	
-
   }
 }
 

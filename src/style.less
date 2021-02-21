@@ -30,8 +30,8 @@
 }
 
 .oracle-nav-size() {
-  height:60px;
-  min-height:60px;
+  height: 60px;
+  min-height: 60px;
 }
 
 .oracle-btn() {
@@ -45,7 +45,7 @@
   color: @oracle-white;
   border: 1px solid @oracle-white;
   background: transparent;
-  .oracle-btn; 
+  .oracle-btn;
 }
 
 .oracle-button-second() {
@@ -53,9 +53,8 @@
   background: @oracle-white;
   mix-blend-mode: screen;
   text-transform: none;
-  .oracle-btn; 
+  .oracle-btn;
 }
-
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
   .brown-bk;
@@ -69,12 +68,14 @@
   .nav-text;
 }
 
-.uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
-  .oracle-nav-size; 
+.uk-navbar-nav > li > a,
+.uk-navbar-item,
+.uk-navbar-toggle {
+  .oracle-nav-size;
 }
 
 .uk-navbar-nav {
-  .oracle-nav-size; 
+  .oracle-nav-size;
 }
 
 .uk-button-primary {
@@ -85,7 +86,6 @@
   .oracle-button-second;
 }
 
-
 .uk-button-secondary {
   .oracle-button-second;
 }
@@ -95,8 +95,6 @@
 }
 
 /* theme */
-
-
 
 /* page */
 
@@ -111,7 +109,7 @@ a:hover {
 }
 
 .logo {
-  display:none;
+  display: none;
 }
 
 .wrapper {
@@ -121,7 +119,7 @@ a:hover {
 }
 
 .uk-navbar-center {
-  display:none;
+  display: none;
 }
 
 .mobile-logo {
@@ -136,13 +134,12 @@ a:hover {
 }
 
 .desktop-large {
-  display:none;
+  display: none;
 }
-
 
 .uk-navbar-nav {
   .account {
-    background:@oracle-brown;
+    background: @oracle-brown;
   }
 
   .sales {
@@ -150,20 +147,20 @@ a:hover {
   }
 
   .nav-button {
-    max-height:40px;
-    min-width:150px;
-    display:inline-flex;
-    .oracle-btn; 
+    max-height: 40px;
+    min-width: 150px;
+    display: inline-flex;
+    .oracle-btn;
 
     p {
-      margin-top:10px;
-      font-weight:bold;
+      margin-top: 10px;
+      font-weight: bold;
     }
 
     img {
-      min-height:25px;
-      min-width:25px;
-      margin-right:10px;
+      min-height: 25px;
+      min-width: 25px;
+      margin-right: 10px;
     }
   }
 }
@@ -173,8 +170,9 @@ a:hover {
   max-height: 40%;
   background: @oracle-brown;
 
-  p, button {
-    display:none;
+  p,
+  button {
+    display: none;
   }
 
   .oracle-img {
@@ -185,7 +183,7 @@ a:hover {
     .img-content {
       padding-top: 10vh;
       position: relative;
-      margin-left:5%;
+      margin-left: 5%;
       width: 70%;
     }
   }
@@ -213,14 +211,14 @@ a:hover {
     }
 
     div {
-      background:@oracle-white;
+      background: @oracle-white;
       border: 2px solid @oracle-white;
       height: 2px;
       width: 18px;
     }
 
     .active {
-      margin-top:-2px;
+      margin-top: -2px;
       height: 6px;
       background: transparent;
     }
@@ -233,7 +231,7 @@ a:hover {
     line-height: 1.35;
     margin-top: 9px;
     font-weight: 200;
-    padding-bottom:20px;
+    padding-bottom: 20px;
   }
 
   h1 {
@@ -271,23 +269,22 @@ a:hover {
 
 .footer-copy {
   p {
-    
-    font-weight:200 !important;
-    font-size:0.84rem;
-    line-height:15px;
-    margin:0px;
+    font-weight: 200 !important;
+    font-size: 0.84rem;
+    line-height: 15px;
+    margin: 0px;
   }
   h3 {
     color: @oracle-white;
-    font-weight:bold;
-    font-size:1.1em;
+    font-weight: bold;
+    font-size: 1.1em;
   }
   ul {
     padding: 0;
     list-style-type: none;
   }
   li {
-    margin-top:10px;
+    margin-top: 10px;
   }
 }
 
@@ -313,41 +310,39 @@ a:hover {
   }
 }
 
- .footer-copy {
-    display: block;
+.footer-copy {
+  display: block;
 
-    h3::after {
-      content: "";
-      height: 15px;
-      width: 15px;
-      float: right;
-      background: url("../img/arrow.svg");
-      background-repeat: no-repeat;
-    }
-  }
-
-  .footer-copy {
-    ul {
-      display: none;
-    }
-  }
-/* page */ 
-
-
-@media @tablet {
-.uk-navbar-center {
-  display:block;
+  h3::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    float: right;
+    background: url("../img/arrow.svg");
+    background-repeat: no-repeat;
   }
 }
 
+.footer-copy {
+  ul {
+    display: none;
+  }
+}
+/* page */
+
+@media @tablet {
+  .uk-navbar-center {
+    display: block;
+  }
+}
 
 @media @desktop {
   .logo {
-    display:block;
+    display: block;
   }
 
   .uk-navbar-center {
-    display:block;
+    display: block;
   }
 
   .top-section {
@@ -358,20 +353,21 @@ a:hover {
   .img-content {
     padding-top: 20vh !important;
     position: relative;
-    margin-left:0%;
-    margin:auto !important;
+    margin-left: 0%;
+    margin: auto !important;
   }
 
   .img-col {
-  height: 700px;
-  max-height: 90vh;
+    height: 700px;
+    max-height: 90vh;
 
-   p, button {
-    display:block;
+    p,
+    button {
+      display: block;
+    }
   }
-}
 
-.dashed-nav {
+  .dashed-nav {
     padding-top: 100px !important;
     div {
       height: 6px !important;
@@ -379,7 +375,8 @@ a:hover {
     }
   }
 
-  .mobile-nav, .tablet-nav{
+  .mobile-nav,
+  .tablet-nav {
     display: none;
   }
 
@@ -393,23 +390,20 @@ a:hover {
       display: block;
     }
     h3 {
-    color: fade(@oracle-off-white, 60%);
+      color: fade(@oracle-off-white, 60%);
     }
   }
-    h3::after {
-    display:none;
+  h3::after {
+    display: none;
   }
-
 }
 
 @media @large {
   .desktop-regular {
-    display:none;
+    display: none;
   }
 
   .desktop-large {
-    display:block;
+    display: block;
   }
 }
-
-
